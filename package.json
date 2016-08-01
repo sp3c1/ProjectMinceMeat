@@ -1,0 +1,19 @@
+{
+  "name": "mince-meat",
+  "version": "0.0.1",
+  "description": "Tool to Mince!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha mince/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sp3c1/ProjectMinceMeat.git"
+  },
+  "author": "bspecjalny@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sp3c1/ProjectMinceMeat/issues"
+  },
+  "homepage": "https://github.com/sp3c1/ProjectMinceMeat#readme"
+}

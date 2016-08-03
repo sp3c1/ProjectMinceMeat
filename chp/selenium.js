@@ -11,23 +11,23 @@ var By = require('selenium-webdriver').By,
 //var events = require('events');
 
 
-process.on('message', function(m) {
+process.on('message', function (m) {
     //console.log('CHILD got message:', m);
 
     switch (m.action) {
         case "config":
-
             config = m.config;
-            browser = require('../browser')(fs, By, until, chrome, promise, config,process);
-
+            browser = require('../browser')(fs, By, until, chrome, promise, config, process);
+            browser.goToTargetItem('http://www.whatsmyip.org/');
             break;
         case "attempt":
-
+            if (m.url && m.url !== "") {
+                browser.goToTargetItem(m.url, true);
+            } else {
+                process.send({action: 'result', data: 'error'});
+            }
             break;
 
-        case "kill":
-            console.log('parent send kill');
-            browser.setCancel(m.crc);
-            break;
+
     }
 });

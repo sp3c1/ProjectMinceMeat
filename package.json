@@ -1,28 +1,28 @@
 {
-    "name": "mince-meat",
-    "version": "0.0.1",
-    "description": "Tool to Mince!",
-    "main": "index.js",
-    "scripts": {
-        "test": "mocha mince/test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/sp3c1/ProjectMinceMeat.git"
-    },
-    "author": "bspecjalny@gmail.com",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/sp3c1/ProjectMinceMeat/issues"
-    },
-    "homepage": "https://github.com/sp3c1/ProjectMinceMeat#readme",
-    "dependencies": {
-        "express": "3.x",
-        "lodash": "4.14.1",
-        "ordered-fast-lookup-map": "1.1.1",
-        "ps-node": "0.1.2",
-        "selenium-webdriver": "2.53.x",
-        "socket.io": "1.4.5",
-        "body-parser": "1.15.1"
-    }
+  "name": "mince-meat",
+  "version": "0.0.1",
+  "description": "Tool to Mince!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha mince/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sp3c1/ProjectMinceMeat.git"
+  },
+  "author": "bspecjalny@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sp3c1/ProjectMinceMeat/issues"
+  },
+  "homepage": "https://github.com/sp3c1/ProjectMinceMeat#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "ordered-fast-lookup-map": "1.1.1",
+    "ps-node": "^0.1.6",
+    "selenium-webdriver": "2.x.x",
+    "socket.io": "^4.4.0"
+  }
 }
